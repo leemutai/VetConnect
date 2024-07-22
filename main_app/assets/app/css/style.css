@@ -1,0 +1,69 @@
+.custom-navbar {
+    background-color: blue; 
+    font-size: small;
+}
+.goodnessseccont img{
+    width:100%;
+}
+.cake{
+    background-image: -ms-linear-gradient(#fff7ef, #fff);
+    background-image: -o-linear-gradient(#fff7ef);
+    padding:50px 40px;
+    
+    padding-bottom:20px;
+}
+.smbg{
+    background-color: #fff;
+    background-image: linear-gradient(rgba(110, 69,143,0.1, #fff));
+    background-image: -webkit-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -moz-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -ms-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -o-linear-gradient(rgba(110,69,143,0.1, #fff));
+}
+.pro{
+    background-color: #fff;
+    background-image: linear-gradient(rgba(110, 69,143,0.1, #fff));
+    background-image: -webkit-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -moz-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -ms-linear-gradient(rgba(110,69,143,0.1, #fff));
+    background-image: -o-linear-gradient(rgba(110,69,143,0.1, #fff)); 
+}
+
+a {
+    text-decoration: none;
+}
+
+.goodnesssec a {
+    text-decoration: none;
+}
+.goodnesssec a:hover, .goodnesssec a:focus, .goodnesssec a:active {
+    text-decoration: none;
+    color: #333; 
+}
+
+.bg-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 700px;
+    background-image: url("{% static 'app/images/product/cover.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adjust the padding as needed */
+    border-radius: 10px; /* Optional: to add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: to add a slight shadow */
+}
+
+.form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 10px; /* Optional: to add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: to add a slight shadow */
+}
+

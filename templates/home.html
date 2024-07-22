@@ -1,0 +1,53 @@
+
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block banner_slider %} 
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/Cat 1.jpg' %}" width="600px" height="700px" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/Cat 5.webp' %}" width="600px" height="700px" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/Cat 7.webp' %}" width="600px" height="700px" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/Cat 10.jpg' %}" width="600px" height="700px" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/Cat 11.jpg' %}" width="600px" height="700px" class="d-block w-100" alt="banner image">
+        </div>
+    </div>
+    
+</div>
+{% endblock banner_slider %}
+
+{% block information %} 
+
+{% endblock information %}
+<br>
+<br>
+{% block main-content %}
+<div class="container" style="padding: 50px; background-color: #DEB887;">
+    <h2 class="text-center" style="color: #333; font-size: 2rem;">VetKonnect </h2>
+    <br><br>
+    
+    <!-- Slider Single -->
+    <div class="single-slider d-flex align-items-center slider-height" style="background-image: url({% static '/app/images/product/cover.jpg' %}); background-size: cover; background-position: center; padding: 100px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-10" style="color: #fff;">
+                </div>
+                <div class="hero__caption" style="text-align: left; color: #fff;">
+                    <span data-animation="fadeInUp" data-delay=".3s" style="display: block; animation: fadeInUp 1s ease 0s; animation-delay: 0.3s; font-size: 1.5rem;">We help to groom your pet</span>
+                    <h1 data-animation="fadeInUp" data-delay=".3s" style="animation: fadeInUp 1s ease 0s; animation-delay: 0.3s; font-size: 4rem;">We Care For Your Pets.</h1>
+                    {% comment %} <p data-animation="fadeInUp" data-delay=".6s" style="animation: fadeInUp 1s ease 0s; animation-delay: 0.6s; font-size: 1rem;">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna sectetur adipisci.</p> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
