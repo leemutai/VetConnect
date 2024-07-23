@@ -37,6 +37,38 @@
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+
+                    </li>
+                         {% else %}
+                          <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
+
+
+                    {%  endif %}
+
+
+
+                </ul>
+
+            </div>
+        </div>
 {#        <ul class="navbar-nav me-auto mb-2 mb-lg-0">#}
 {#         <li class="nav-item dropdown mx-2">#}
 {#           <a class="nav-link dropdown-toggle text-white" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>#}
@@ -64,5 +96,5 @@
 {#       </li>#}
 {#        </ul>#}
 
-        </div>
+{#        </div>#}
       </nav>

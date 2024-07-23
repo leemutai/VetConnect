@@ -29,6 +29,17 @@ class Farmer(models.Model):
         return self.name
 
 
+class Vet(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200)
+    location = models.CharField(max_length=200)
+    email = models.EmailField()
+    mobile = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.name
+
+
 class Appointment(models.Model):
     appointment_id = models.IntegerField(primary_key=True)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
