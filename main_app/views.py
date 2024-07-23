@@ -91,4 +91,4 @@ def signin(request):
 def signout(request):
     logout(request)
     messages.success(request, 'Logout successful')
-    return redirect('index')
+    return redirect('home')
