@@ -29,12 +29,11 @@ urlpatterns = [
     path('agrovet', views.agrovet, name='agrovet'),
     path('community', views.community, name='community'),
 
-    path('login', views.login_view, name='login'),
-    path('register', views.register, name='register'),
-    path('activate/<uidb64>/<token>/',views.activate,name='activate'),
+    
 
-    path('logout/', views.logout_view, name='logout'),
 
-    path('vetConnect/', include('allauth.urls')),
+
+    path('vetConnect/', include('main_app.urls')),
     path('admin/', admin.site.urls),
+
 ]
